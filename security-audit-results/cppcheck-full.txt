@@ -1,0 +1,718 @@
+Checking src/fsearch.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_config.h:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.h:22: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.h:23: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter_manager.h:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter_manager.h:4: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter.h:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter.h:4: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_flags.h:3: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.h:21: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.h:22: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.h:23: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.h:24: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_thread_pool.h:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_thread_pool.h:22: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_thread_pool.h:23: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.h:25: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.h:26: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.h:27: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.h:28: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.h:24: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.h:25: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.h:26: information: Include file: <inttypes.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.h:27: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_clipboard.h:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_clipboard.h:22: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.h:21: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.h:22: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_limits.h:21: information: Include file: <limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_ui.h:22: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_ui_utils.h:21: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window.h:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window.h:22: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window.h:23: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_list_view.h:3: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_list_view.h:4: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query.h:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query.h:22: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query.h:23: information: Include file: <pango/pango.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query.h:24: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.h:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.h:4: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.h:5: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.h:3: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.h:4: information: Include file: <unicode/ucasemap.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.h:5: information: Include file: <unicode/unorm2.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.h:6: information: Include file: <unicode/utypes.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_match_data.h:7: information: Include file: <pango/pango-attributes.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_match_data.h:8: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_match_data.h:9: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.h:6: information: Include file: <pango/pango-attributes.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.h:7: information: Include file: <pcre2.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.h:8: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.h:9: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.h:10: information: Include file: <unicode/ucasemap.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.h:11: information: Include file: <unicode/unorm2.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_tree.h:5: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_statusbar.h:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_statusbar.h:4: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_statusbar.h:5: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:34: information: Include file: "icon_resources.h" not found.
+src/fsearch.c:35: information: Include file: "ui_resources.h" not found.
+src/fsearch_preview.h:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:37: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:38: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:39: information: Include file: <limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:40: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:41: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:42: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch.c:97: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.
+Checking src/fsearch.c: BUILD_CHANNEL...
+src/fsearch.c:22: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch.c: HAVE_CONFIG_H...
+1/47 files checked 5% done
+Checking src/fsearch_array.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_array.c:22: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.c:23: information: Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.c:24: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.c:25: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.c:26: information: Include file: <sys/param.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_array.c:370: style: Condition 'c' is always true
+src/fsearch_array.c:460: style: The unsigned expression 'array->num_items' will never be negative so it is either pointless or an error to check if it is.
+src/fsearch_array.c:499: style: Parameter 'array' can be declared as pointer to const
+2/47 files checked 7% done
+Checking src/fsearch_clipboard.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_clipboard.c:22: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_clipboard.c:23: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_clipboard.c:24: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+3/47 files checked 8% done
+Checking src/fsearch_config.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_config.c:21: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.c:22: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.c:23: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.c:24: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.c:25: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.h:3: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.h:4: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.h:5: information: Include file: <sys/time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.h:3: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.h:4: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.h:5: information: Include file: <sys/time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_config.c:121: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:123: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:125: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:127: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:129: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:131: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:162: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:164: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:166: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:168: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:188: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:190: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:437: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:440: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:443: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:446: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:449: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:452: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:473: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:476: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:479: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:482: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:503: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+src/fsearch_config.c:506: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+Checking src/fsearch_config.c: GLIB_CHECK_VERSION=0...
+4/47 files checked 13% done
+Checking src/fsearch_database.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_database.c:25: information: Include file: <dirent.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:26: information: Include file: <fcntl.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:27: information: Include file: <fnmatch.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:28: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:34: information: Include file: <inttypes.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:35: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:36: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:37: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:38: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:39: information: Include file: <sys/file.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:40: information: Include file: <sys/stat.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:41: information: Include file: <sys/time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:42: information: Include file: <sys/types.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:43: information: Include file: <unistd.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_memory_pool.h:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_memory_pool.h:4: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_memory_pool.h:5: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_memory_pool.h:6: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_task.h:4: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_task.h:5: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database.c:236: style: Condition 'new[offset]!='\0'' is always true
+src/fsearch_database.c:577: style: Function 'db_load' argument 2 names different: declaration 'path' definition 'file_path'.
+src/fsearch_database.c:1377: style: Function 'db_new' argument 1 names different: declaration 'includes' definition 'indexes'.
+src/fsearch_database.c:125: style: Parameter 'db' can be declared as pointer to const
+src/fsearch_database.c:1164: style: Parameter 'excludes' can be declared as pointer to const
+src/fsearch_database.c:1166: style: Variable 'fs_path' can be declared as pointer to const
+src/fsearch_database.c:1367: style: Parameter 'p1' can be declared as pointer to const. However it seems that 'compare_index_path' is a callback function, if 'p1' is declared with const you might also need to cast function pointer(s).
+src/fsearch_database.c:1367: style: Parameter 'p2' can be declared as pointer to const. However it seems that 'compare_index_path' is a callback function, if 'p2' is declared with const you might also need to cast function pointer(s).
+src/fsearch_database.c:1372: style: Parameter 'p1' can be declared as pointer to const. However it seems that 'compare_exclude_path' is a callback function, if 'p1' is declared with const you might also need to cast function pointer(s).
+src/fsearch_database.c:1372: style: Parameter 'p2' can be declared as pointer to const. However it seems that 'compare_exclude_path' is a callback function, if 'p2' is declared with const you might also need to cast function pointer(s).
+src/fsearch_database.c:1627: style: Variable 'l' can be declared as pointer to const
+src/fsearch_database.c:1628: style: Variable 'fs_path' can be declared as pointer to const
+src/fsearch_database.c:1067: style: Variable 'file_block_size_offset' is assigned a value that is never used.
+Checking src/fsearch_database.c: AT_NO_AUTOMOUNT...
+src/fsearch_database.c:20: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_database.c: HAVE_CONFIG_H...
+src/fsearch_database.c:31: information: Include file: <malloc.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_database.c: HAVE_MALLOC_TRIM...
+5/47 files checked 21% done
+Checking src/fsearch_database_entry.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_string_utils.h:20: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_string_utils.h:21: information: Include file: <unistd.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.c:5: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.c:6: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.c:7: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_entry.c:54: style: Parameter 'entry' can be declared as pointer to const
+src/fsearch_database_entry.c:59: style: Parameter 'entry' can be declared as pointer to const
+src/fsearch_database_entry.c:130: style: Parameter 'entry' can be declared as pointer to const
+Checking src/fsearch_database_entry.c: __MACH__...
+6/47 files checked 22% done
+Checking src/fsearch_database_index.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+7/47 files checked 22% done
+Checking src/fsearch_database_search.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_database_search.h:26: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_search.c:23: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_search.c:24: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_search.c:25: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_list_view.h:9: error: syntax error
+8/47 files checked 23% done
+Checking src/fsearch_database_view.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_selection.h:5: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_selection.h:6: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_selection.h:7: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_database_view.c:10: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+9/47 files checked 28% done
+Checking src/fsearch_exclude_path.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_exclude_path.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.c:2: information: Include file: <stddef.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.c:4: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_exclude_path.c:22: style: Parameter 'src' can be declared as pointer to const
+10/47 files checked 28% done
+Checking src/fsearch_file_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_file_utils.c:27: information: Include file: <gio/gdesktopappinfo.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.c:30: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.c:31: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.c:32: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.c:33: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.c:34: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_file_utils.c:64: style: Unsigned expression 'len' can't be negative so it is unnecessary to test it.
+src/fsearch_file_utils.c:461: style: Variable 'path' can be declared as pointer to const
+Checking src/fsearch_file_utils.c: __MACH__...
+11/47 files checked 31% done
+Checking src/fsearch_filter.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_filter.c:3: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter.c:4: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter.c:5: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter.c:43: style: Parameter 'filter' can be declared as pointer to const
+12/47 files checked 32% done
+Checking src/fsearch_filter_editor.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_filter_editor.h:3: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter_editor.c:3: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter_editor.c:4: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+13/47 files checked 33% done
+Checking src/fsearch_filter_manager.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_filter_manager.c:3: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter_manager.c:4: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_filter_manager.c:49: style: Variable 'f' can be declared as pointer to const
+src/fsearch_filter_manager.c:50: style: Variable 'ff' can be declared as pointer to const
+src/fsearch_filter_manager.c:48: style: Parameter 'filter' can be declared as pointer to const
+src/fsearch_filter_manager.c:85: style: Parameter 'new_order' can be declared as pointer to const
+14/47 files checked 34% done
+Checking src/fsearch_index.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_index.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.c:2: information: Include file: <stddef.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.c:4: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_index.c:29: style: Parameter 'index' can be declared as pointer to const
+15/47 files checked 34% done
+Checking src/fsearch_list_view.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_list_view.c:3: information: Include file: "pango/pango-attributes.h" not found.
+src/fsearch_list_view.c:4: information: Include file: "pango/pango-layout.h" not found.
+src/fsearch_list_view.c:5: information: Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_list_view.c:6: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_list_view.c:7: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_list_view.c:175: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_CODE is a macro then please configure it.
+Checking src/fsearch_list_view.c: GTK_CHECK_VERSION=0...
+16/47 files checked 46% done
+Checking src/fsearch_listview_popup.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_listview_popup.c:23: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_listview_popup.h:27: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_listview_popup.c: GTK_CHECK_VERSION=0...
+src/fsearch_listview_popup.c:20: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_listview_popup.h:22: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_listview_popup.c: HAVE_CONFIG_H...
+17/47 files checked 47% done
+Checking src/fsearch_memory_pool.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_memory_pool.c:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_memory_pool.c:4: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_memory_pool.c:53: portability: 'block->items' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on 'void *' is a GNU C extension, which defines the 'sizeof(void)' to be 1.
+src/fsearch_memory_pool.c:120: portability: 'block->items' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on 'void *' is a GNU C extension, which defines the 'sizeof(void)' to be 1.
+18/47 files checked 48% done
+Checking src/fsearch_preferences_ui.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_preferences_widgets.h:3: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_ui.c:26: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_ui.c:27: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_ui.c:28: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_ui.c:29: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_ui.c:30: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_preferences_ui.c: GTK_CHECK_VERSION=0...
+19/47 files checked 53% done
+Checking src/fsearch_preferences_widgets.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_preferences_widgets.c:1: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_preferences_widgets.c:160: style: Function 'pref_filter_treeview_row_add' argument 1 names different: declaration 'index_model' definition 'filter_model'.
+src/fsearch_preferences_widgets.c:200: style: Function 'pref_exclude_treeview_row_add' argument 1 names different: declaration 'model' definition 'exclude_model'.
+src/fsearch_preferences_widgets.c:217: style: Function 'pref_index_treeview_init' argument 2 names different: declaration 'locations' definition 'indexes'.
+20/47 files checked 55% done
+Checking src/fsearch_preview.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_preview.c:22: information: Include file: <gio/gio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+21/47 files checked 55% done
+Checking src/fsearch_query.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_query.c:22: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query.c:23: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+22/47 files checked 56% done
+Checking src/fsearch_query_lexer.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_query_lexer.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_lexer.c:2: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_lexer.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_lexer.h:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_lexer.c:57: style: Redundant initialization for 'c'. The initialized value is overwritten before it is read.
+src/fsearch_query_lexer.c:74: style: Redundant initialization for 'c'. The initialized value is overwritten before it is read.
+src/fsearch_query_lexer.c:75: style: 'continue' is redundant since it is the last statement in a loop.
+23/47 files checked 57% done
+Checking src/fsearch_query_match_data.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_query_match_data.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_match_data.c:2: information: Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_match_data.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_match_data.c:114: style: Parameter 'match_data' can be declared as pointer to const
+src/fsearch_query_match_data.c:205: style: Parameter 'match_data' can be declared as pointer to const
+src/fsearch_query_match_data.c:215: style: Parameter 'match_data' can be declared as pointer to const
+24/47 files checked 58% done
+Checking src/fsearch_query_matchers.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_query_matchers.h:6: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_matchers.h:7: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_matchers.c:3: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_matchers.c:44: style: Parameter 'node' can be declared as pointer to const
+src/fsearch_query_matchers.c:292: style: Variable 'ovector' can be declared as pointer to const
+src/fsearch_query_matchers.c:325: style: Variable 'dest' can be declared as pointer to const
+25/47 files checked 60% done
+Checking src/fsearch_query_node.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_size_utils.h:3: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_size_utils.h:4: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.c:9: information: Include file: <inttypes.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.c:10: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.c:11: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.c:12: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_node.c:124: style: Function 'fsearch_query_node_new_depth' argument 2 names different: declaration 'child_folder_count_start' definition 'child_count_start'.
+src/fsearch_query_node.c:125: style: Function 'fsearch_query_node_new_depth' argument 3 names different: declaration 'child_folder_count_end' definition 'child_count_end'.
+src/fsearch_query_node.c:132: style: Function 'fsearch_query_node_new_childcount' argument 2 names different: declaration 'child_folder_count_start' definition 'child_count_start'.
+src/fsearch_query_node.c:133: style: Function 'fsearch_query_node_new_childcount' argument 3 names different: declaration 'child_folder_count_end' definition 'child_count_end'.
+26/47 files checked 63% done
+Checking src/fsearch_query_parser.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_query_parser.h:6: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_parser.h:7: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_time_utils.h:3: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_time_utils.h:4: information: Include file: <time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_parser.c:8: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_query_parser.c:389: style: Parameter 'name' can be declared as pointer to const
+src/fsearch_query_parser.c:450: style: Variable 'modifier' can be declared as pointer to const
+src/fsearch_query_parser.c:472: style: Parameter 'field_name' can be declared as pointer to const
+27/47 files checked 67% done
+Checking src/fsearch_query_tree.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_query_tree.c:70: style: Condition 'num_flags' is always false
+src/fsearch_query_tree.c:278: style: Variable 'query_stripped' can be declared as pointer to const
+src/fsearch_query_tree.c:99: style: Variable 'num_flags' is assigned a value that is never used.
+28/47 files checked 68% done
+Checking src/fsearch_result_view.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_result_view.c:10: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_result_view.c:11: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_result_view.c:12: information: Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_result_view.c:13: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_result_view.c:14: information: Include file: <sys/stat.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+29/47 files checked 71% done
+Checking src/fsearch_selection.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+30/47 files checked 71% done
+Checking src/fsearch_size_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_size_utils.c:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_size_utils.c:4: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+31/47 files checked 71% done
+Checking src/fsearch_statusbar.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_statusbar.c:6: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_statusbar.c:39: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.
+32/47 files checked 73% done
+Checking src/fsearch_string_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_string_utils.c:22: information: Include file: <ctype.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_string_utils.c:23: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_string_utils.c:24: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+33/47 files checked 74% done
+Checking src/fsearch_task.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_task.c:5: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_task.c:6: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+34/47 files checked 75% done
+Checking src/fsearch_thread_pool.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_thread_pool.c:21: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_thread_pool.c:46: style: Variable 'temp' can be declared as pointer to const
+src/fsearch_thread_pool.c:45: style: Parameter 'thread' can be declared as pointer to const
+src/fsearch_thread_pool.c:155: style: Variable 'ctx' can be declared as pointer to const
+src/fsearch_thread_pool.c:168: style: Variable 'ctx' can be declared as pointer to const
+src/fsearch_thread_pool.c:184: style: Variable 'ctx' can be declared as pointer to const
+35/47 files checked 76% done
+Checking src/fsearch_time_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_time_utils.c:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_time_utils.c:4: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_time_utils.c:5: information: Include file: <time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_time_utils.c:355: style: Redundant initialization for 'tm_start'. The initialized value is overwritten before it is read.
+src/fsearch_time_utils.c:356: style: Redundant initialization for 'tm_end'. The initialized value is overwritten before it is read.
+src/fsearch_time_utils.c:498: style: Variable 'date_suffix' can be declared as pointer to const
+36/47 files checked 78% done
+Checking src/fsearch_ui_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+37/47 files checked 79% done
+Checking src/fsearch_utf.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_utf.c:3: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.c:4: information: Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.c:5: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.c:6: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_utf.c:8: information: Include file: <unicode/ustring.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+38/47 files checked 80% done
+Checking src/fsearch_window.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_window.c:39: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window.c:268: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.
+src/fsearch_window.c:22: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_window.c: HAVE_CONFIG_H...
+39/47 files checked 88% done
+Checking src/fsearch_window_actions.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/fsearch_window_actions.c:24: information: Include file: <gio/gdesktopappinfo.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window_actions.c:27: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window_actions.c:28: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window_actions.c:29: information: Include file: <gdk/gdk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/fsearch_window_actions.c:32: information: Include file: <gdk/gdkx.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_window_actions.c: GDK_WINDOWING_X11...
+src/fsearch_window_actions.c:20: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/fsearch_window_actions.c: HAVE_CONFIG_H...
+Checking src/fsearch_window_actions.c: __MACH__...
+40/47 files checked 94% done
+Checking src/main.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/main.c:24: information: Include file: <glib/gi18n.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/main.c:25: information: Include file: <gtk/gtk.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/main.c:26: information: Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/main.c:20: information: Include file: <config.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+Checking src/main.c: HAVE_CONFIG_H...
+41/47 files checked 94% done
+Checking src/strverscmp.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/strverscmp.c:23: information: Include file: <ctype.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+42/47 files checked 95% done
+Checking src/tests/test_array.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/tests/test_array.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_array.c:2: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_array.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_array.c:5: information: Include file: <src/fsearch_array.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_array.c:134: style: Variable 'v1' can be declared as pointer to const
+src/tests/test_array.c:135: style: Variable 'v2' can be declared as pointer to const
+43/47 files checked 96% done
+Checking src/tests/test_query.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/tests/test_query.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_query.c:2: information: Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_query.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_query.c:5: information: Include file: <src/fsearch_limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_query.c:6: information: Include file: <src/fsearch_memory_pool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_query.c:7: information: Include file: <src/fsearch_query.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_query.c:84: style: Variable 'current_locale' can be declared as pointer to const
+44/47 files checked 98% done
+Checking src/tests/test_size_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/tests/test_size_utils.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_size_utils.c:3: information: Include file: <src/fsearch_size_utils.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_size_utils.c:49: error: syntax error
+45/47 files checked 98% done
+Checking src/tests/test_string_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/tests/test_string_utils.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_string_utils.c:2: information: Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_string_utils.c:3: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_string_utils.c:5: information: Include file: <src/fsearch_string_utils.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_string_utils.c:43: error: syntax error
+46/47 files checked 99% done
+Checking src/tests/test_time_utils.c ...
+Defines:
+Undefines:
+Includes:
+Platform:native
+src/tests/test_time_utils.c:1: information: Include file: <glib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_time_utils.c:3: information: Include file: <src/fsearch_time_utils.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.
+src/tests/test_time_utils.c:58: error: syntax error
+47/47 files checked 100% done
+src/fsearch_clipboard.c:105: style: The function 'clipboard_copy_file_list' is never used.
+src/fsearch_config.c:54: style: The function 'config_make_dir' is never used.
+src/fsearch_config.c:206: style: The function 'config_load' is never used.
+src/fsearch_config.c:340: style: The function 'config_load_default' is never used.
+src/fsearch_config.c:514: style: The function 'config_save' is never used.
+src/fsearch_config.c:727: style: The function 'config_cmp' is never used.
+src/fsearch_config.c:766: style: The function 'config_copy' is never used.
+src/fsearch_database.c:89: style: The function 'db_register_view' is never used.
+src/fsearch_database.c:99: style: The function 'db_unregister_view' is never used.
+src/fsearch_database.c:209: style: The function 'db_update_timestamp' is never used.
+src/fsearch_database.c:316: style: The function 'db_load_entry_super_elements' is never used.
+src/fsearch_database.c:395: style: The function 'db_load_parent_idx' is never used.
+src/fsearch_database.c:577: style: The function 'db_load' is never used.
+src/fsearch_database.c:992: style: The function 'db_save' is never used.
+src/fsearch_database.c:1377: style: The function 'db_new' is never used.
+src/fsearch_database.c:1451: style: The function 'db_get_timestamp' is never used.
+src/fsearch_database.c:1490: style: The function 'db_try_lock' is never used.
+src/fsearch_database.c:1534: style: The function 'db_get_folders_copy' is never used.
+src/fsearch_database.c:1539: style: The function 'db_get_files_copy' is never used.
+src/fsearch_database.c:1544: style: The function 'db_get_entries_sorted' is never used.
+src/fsearch_database.c:1595: style: The function 'db_get_files' is never used.
+src/fsearch_database.c:1601: style: The function 'db_get_folders' is never used.
+src/fsearch_database.c:1607: style: The function 'db_get_thread_pool' is never used.
+src/fsearch_database.c:1613: style: The function 'db_scan' is never used.
+src/fsearch_database.c:1653: style: The function 'db_ref' is never used.
+src/fsearch_database.c:1663: style: The function 'db_unref' is never used.
+src/fsearch_database_entry.c:59: style: The function 'db_entry_is_file' is never used.
+src/fsearch_database_entry.c:92: style: The function 'db_entry_get_path' is never used.
+src/fsearch_database_entry.c:152: style: The function 'db_entry_get_name_for_display' is never used.
+src/fsearch_database_entry.c:187: style: The function 'db_entry_get_mark' is never used.
+src/fsearch_database_entry.c:261: style: The function 'db_entry_compare_entries_by_type' is never used.
+src/fsearch_database_entry.c:280: style: The function 'db_entry_compare_entries_by_position' is never used.
+src/fsearch_database_entry.c:379: style: The function 'db_entry_set_mark' is never used.
+src/fsearch_file_utils.c:62: style: The function 'fsearch_file_utils_init_data_dir_path' is never used.
+src/fsearch_file_utils.c:71: style: The function 'fsearch_file_utils_create_dir' is never used.
+src/fsearch_file_utils.c:161: style: The function 'fsearch_file_utils_remove' is never used.
+src/fsearch_file_utils.c:166: style: The function 'fsearch_file_utils_trash' is never used.
+src/fsearch_file_utils.c:443: style: The function 'fsearch_file_utils_open_path_list' is never used.
+src/fsearch_file_utils.c:519: style: The function 'fsearch_file_utils_open_path_list_with_command' is never used.
+src/fsearch_file_utils.c:558: style: The function 'fsearch_file_utils_get_file_type' is never used.
+src/fsearch_file_utils.c:598: style: The function 'fsearch_file_utils_guess_icon' is never used.
+src/fsearch_file_utils.c:623: style: The function 'fsearch_file_utils_get_icon_for_path' is never used.
+src/fsearch_file_utils.c:639: style: The function 'fsearch_file_utils_get_size_formatted' is never used.
+src/fsearch_memory_pool.c:91: style: The function 'fsearch_memory_pool_free' is never used.
+src/fsearch_preferences_ui.c:792: style: The function 'preferences_ui_launch' is never used.
+src/fsearch_preferences_widgets.c:60: style: The function 'on_column_index_toggled' is never used.
+src/fsearch_preview.c:49: style: The function 'fsearch_preview_call_show_file' is never used.
+src/fsearch_preview.c:68: style: The function 'fsearch_preview_call_close' is never used.
+src/fsearch_query_lexer.c:25: style: The function 'top_char' is never used.
+src/fsearch_query_match_data.c:200: style: The function 'fsearch_query_match_data_set_result' is never used.
+src/fsearch_query_match_data.c:205: style: The function 'fsearch_query_match_data_get_result' is never used.
+src/fsearch_query_match_data.c:210: style: The function 'fsearch_query_match_data_set_thread_id' is never used.
+src/fsearch_query_match_data.c:220: style: The function 'fsearch_query_match_get_highlight' is never used.
+src/fsearch_query_tree.c:220: style: The function 'fsearch_query_node_tree_triggers_auto_match_path' is never used.
+src/fsearch_query_tree.c:243: style: The function 'fsearch_query_node_tree_triggers_auto_match_case' is never used.
+src/fsearch_query_tree.c:266: style: The function 'fsearch_query_node_tree_wants_single_threaded_search' is never used.
+src/fsearch_query_tree.c:276: style: The function 'fsearch_query_node_tree_new' is never used.
+src/fsearch_query_tree.c:292: style: The function 'fsearch_query_node_tree_free' is never used.
+src/fsearch_selection.c:6: style: The function 'fsearch_selection_free' is never used.
+src/fsearch_selection.c:12: style: The function 'fsearch_selection_new' is never used.
+src/fsearch_selection.c:17: style: The function 'fsearch_selection_select_toggle' is never used.
+src/fsearch_selection.c:28: style: The function 'fsearch_selection_select' is never used.
+src/fsearch_selection.c:36: style: The function 'fsearch_selection_is_selected' is never used.
+src/fsearch_selection.c:44: style: The function 'fsearch_selection_select_all' is never used.
+src/fsearch_selection.c:60: style: The function 'fsearch_selection_unselect_all' is never used.
+src/fsearch_selection.c:66: style: The function 'fsearch_selection_invert' is never used.
+src/fsearch_selection.c:85: style: The function 'fsearch_selection_get_num_selected' is never used.
+src/fsearch_selection.c:90: style: The function 'fsearch_selection_for_each' is never used.
+src/fsearch_string_utils.c:78: style: The function 'fsearch_string_has_upper' is never used.
+src/fsearch_string_utils.c:153: style: The function 'fsearch_string_starts_with_interval' is never used.
+src/fsearch_task.c:138: style: The function 'fsearch_task_queue_free' is never used.
+src/fsearch_task.c:159: style: The function 'fsearch_task_queue_new' is never used.
+src/fsearch_task.c:172: style: The function 'fsearch_task_queue' is never used.
+src/fsearch_thread_pool.c:142: style: The function 'fsearch_thread_pool_get_threads' is never used.
+src/fsearch_thread_pool.c:148: style: The function 'fsearch_thread_pool_get_data' is never used.
+src/fsearch_thread_pool.c:163: style: The function 'fsearch_thread_pool_task_is_idle' is never used.
+src/fsearch_thread_pool.c:195: style: The function 'fsearch_thread_pool_wait_for_thread' is never used.
+src/fsearch_thread_pool.c:208: style: The function 'fsearch_thread_pool_get_num_threads' is never used.
+src/fsearch_thread_pool.c:214: style: The function 'fsearch_thread_pool_push_data' is never used.
+src/fsearch_time_utils.c:276: style: The function 'print_tm' is never used.
+src/fsearch_ui_utils.c:22: style: The function 'ui_utils_run_gtk_dialog_async' is never used.
+src/fsearch_ui_utils.c:46: style: The function 'ui_utils_run_gtk_dialog' is never used.
+src/fsearch_utf.c:55: style: The function 'fsearch_utf_fold_case_utf8' is never used.
+nofile:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details)
