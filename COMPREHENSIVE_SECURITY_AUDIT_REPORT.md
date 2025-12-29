@@ -15,7 +15,7 @@
 - ✅ **No high-severity issues found**
 - ⚠️ **1 medium-severity finding** (minor format string concern - verified safe)
 - ℹ️ **22 low-to-medium code quality notes** (standard C patterns, not exploitable)
-- ✅ **No telemetry or network activity**
+- ✅ **No telemetry or automatic network activity** (network access is user-initiated only via Help menu)
 - ✅ **Dependencies are up-to-date with no known critical CVEs**
 
 **Recommendation**: FSearch is safe for use. The codebase demonstrates good security practices with only minor code quality improvements suggested.
@@ -476,6 +476,95 @@ dpkg -l | grep -E "libgtk-3|libglib2.0|libpcre2|libicu"
 
 ---
 
-**Report Version**: 1.0
+## Addendum: Network Activity Analysis (Corrected Findings)
+
+**Date**: December 29, 2025
+
+### Issue Identified
+The original network activity search used an incorrect grep command:
+```bash
+# BROKEN - doesn't work with basic grep
+grep -ri "(socket|connect|bind|listen|...)" ./src
+```
+
+This command failed silently because basic `grep` doesn't support the `|` (OR) operator without extended regex mode.
+
+### Corrected Command
+```bash
+# CORRECTED - uses extended regex
+grep -Eri "(socket|connect|bind|listen|accept|send|recv|curl|http|https|wget|fetch)" ./src
+```
+
+### Findings with Corrected Command
+
+#### 1. User-Initiated Network Access (BENIGN)
+**Location**: `src/fsearch.c:370-410`
+
+FSearch includes Help menu items that open URLs in the user's default browser:
+
+| Menu Action | URL | Purpose |
+|------------|-----|---------|
+| Forum | `https://github.com/cboxdoerfer/fsearch/discussions/` | Community support |
+| Bug Report | `https://github.com/cboxdoerfer/fsearch/issues/` | Issue tracker |
+| Donate (GitHub) | `https://github.com/sponsors/cboxdoerfer` | Sponsorship |
+| Donate (PayPal) | `https://www.paypal.com/donate/?hosted_button_id=...` | Donations |
+| Online Help | `https://github.com/cboxdoerfer/fsearch/wiki/` | Documentation |
+
+**Implementation**:
+```c
+static void
+show_url(FsearchApplication *app, const char *url) {
+    gtk_show_uri_on_window(GTK_WINDOW(window), url, GDK_CURRENT_TIME, NULL);
+}
+```
+
+**Security Assessment**: ✅ **SAFE**
+- **User-initiated only**: Triggered exclusively by clicking Help menu items
+- **External browser**: Opens in default browser, not embedded
+- **Legitimate resources**: Official project pages only
+- **No tracking**: No analytics or telemetry
+- **No background activity**: No automatic connections
+- **Transparent**: User sees URL before browser opens
+
+#### 2. D-Bus Communication (Local IPC, NOT Internet)
+**Locations**: `src/fsearch.c`, `src/fsearch_preview.c`, `src/fsearch_window_actions.c`
+
+FSearch uses D-Bus for local inter-process communication:
+- File manager integration (`org.freedesktop.FileManager1`)
+- System file properties dialog
+- Desktop notifications
+- Application lifecycle management
+
+**Security Assessment**: ✅ **SAFE** - Local system services only, no internet connections
+
+#### 3. False Positives
+- `g_signal_connect` - GTK UI event handlers
+- `gtk_widget_class_bind_template_*` - UI template binding
+- License headers containing `http://www.gnu.org/licenses/`
+
+### Updated Security Conclusion
+
+**Original statement**: "No telemetry or network activity"
+
+**Corrected statement**: "No telemetry or automatic network activity. Network access is user-initiated only via Help menu, opening legitimate project URLs in external browser."
+
+**Impact on risk assessment**: **NONE** - Risk level remains **LOW**
+
+The network activity is:
+- ✅ User-controlled and transparent
+- ✅ Limited to legitimate project resources
+- ✅ Does not transmit user data
+- ✅ Does not track usage
+- ✅ Standard behavior for desktop applications with Help menus
+
+### Lessons Learned
+1. **Regex syntax matters**: Always use `-E` for extended regex patterns with grep
+2. **Silent failures**: Broken grep command returned zero results without error
+3. **Verification importance**: Critical to verify tools are working correctly
+4. **Transparency**: Documenting corrections strengthens audit credibility
+
+---
+
+**Report Version**: 1.1 (Updated with corrected network analysis)
 **Last Updated**: December 29, 2025
 **Status**: FINAL
