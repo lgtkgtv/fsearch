@@ -19,6 +19,26 @@ This software is from an untrusted source. The goal is to perform a comprehensiv
 5. Command execution vulnerabilities
 6. Build system security
 
+## ⚠️ Important: Grep Extended Regex Syntax
+
+**CRITICAL**: When using grep with OR patterns `(pattern1|pattern2|...)`, you MUST use the `-E` flag for extended regex:
+
+```bash
+# ❌ BROKEN - Silent failure (finds nothing)
+grep -ri "(socket|connect|bind)" src/
+
+# ✅ CORRECT - Extended regex enabled
+grep -Eri "(socket|connect|bind)" src/
+```
+
+**Why this matters**:
+- Basic `grep` treats `|` as a literal pipe character, not OR operator
+- The broken command fails **silently** - returns zero results without error
+- This caused our initial network audit to miss legitimate findings
+- Always use `-E` or `egrep` for patterns with `|`
+
+**All grep commands in this document have been updated to use `-E` for correctness.**
+
 ---
 
 ## Analysis Approach
@@ -180,18 +200,21 @@ cat .github/workflows/build_test.yml
 
 ### 8. Network Activity Audit
 ```bash
-grep -ri "(socket|connect|bind|listen|accept|send|recv|curl|http|https|wget|fetch)" src/
-grep -ri "g_socket_new|g_socket_client|socket\(|AF_INET" src/
+# NOTE: Use -E for extended regex (enables | operator)
+grep -Eri "(socket|connect|bind|listen|accept|send|recv|curl|http|https|wget|fetch)" src/
+grep -Eri "g_socket_new|g_socket_client|socket\(|AF_INET" src/
 ```
 **Results**:
-- 40 files matched the first search
-- 0 files matched the second search
-- All matches were GTK/GIO-related functions (gio-unix-2.0 dependency)
-- **Assessment**: NO NETWORK ACTIVITY FOUND - This is a local-only application
+- Multiple matches found (g_signal_connect, license URLs, Help menu links)
+- Help menu contains GitHub/PayPal URLs opened in external browser (user-initiated only)
+- D-Bus connections for local IPC (file manager integration, NOT internet)
+- No socket programming, no automatic network connections
+- **Assessment**: Network access is user-initiated only via Help menu - opens legitimate project URLs in external browser. No telemetry or background connections.
 
 ### 9. Privacy & Telemetry Audit
 ```bash
-grep -ri "(telemetry|analytics|tracking|crash.?report|google|firebase|amplitude)" src/
+# NOTE: Use -E for extended regex (enables | operator)
+grep -Eri "(telemetry|analytics|tracking|crash.?report|google|firebase|amplitude)" src/
 ```
 **Results**:
 - **0 matches found**
@@ -203,7 +226,8 @@ grep -ri "(telemetry|analytics|tracking|crash.?report|google|firebase|amplitude)
 
 ### 10. Command Execution Security Review
 ```bash
-grep -r "(system\s*\(|exec[vl]|popen|g_spawn)" src/
+# NOTE: Use -E for extended regex (enables | operator)
+grep -Er "(system\s*\(|exec[vl]|popen|g_spawn)" src/
 ```
 **Findings**:
 - Found `g_spawn_command_line_async()` in `src/fsearch_file_utils.c:510`
@@ -225,8 +249,9 @@ g_hash_table_insert(keywords, "{path_full}", path_full_quoted);
 
 ### 11. File System Access Review
 ```bash
-grep -r "(fopen|open\s*\(|g_file_new|g_key_file|XDG_|HOME)" src/
-grep -r "g_get_user_(config|data|cache)_dir" src/
+# NOTE: Use -E for extended regex (enables | operator)
+grep -Er "(fopen|open\s*\(|g_file_new|g_key_file|XDG_|HOME)" src/
+grep -Er "g_get_user_(config|data|cache)_dir" src/
 ```
 **Findings**:
 - Configuration stored in: `~/.config/fsearch/fsearch.conf`
@@ -245,7 +270,8 @@ g_mkdir_with_parents(config_dir, 0700);  // Secure permissions
 
 ### 12. File Deletion Capabilities
 ```bash
-grep -r "(chmod|chown|unlink|remove|rmdir)" src/
+# NOTE: Use -E for extended regex (enables | operator)
+grep -Er "(chmod|chown|unlink|remove|rmdir)" src/
 ```
 **Findings**:
 - Application has file deletion capabilities (`fsearch_file_utils_remove()`)
@@ -363,19 +389,20 @@ find . -name "meson.build"
 find src -type f \( -name "*.c" -o -name "*.h" \) | wc -l
 find . -maxdepth 2 -type d | sort
 
-# 2. Network activity search
-grep -ri "socket\|connect\|http" src/ | wc -l
-grep -ri "g_socket_new\|AF_INET" src/ | wc -l  # Result: 0
+# 2. Network activity search (NOTE: Use -E for | operator)
+grep -Eri "(socket|connect|http)" src/ | wc -l
+grep -Eri "(g_socket_new|AF_INET)" src/ | wc -l
+# Findings: Help menu URLs (user-initiated), D-Bus (local IPC), no telemetry
 
-# 3. Privacy audit
-grep -ri "telemetry\|analytics\|tracking" src/ | wc -l  # Result: 0
+# 3. Privacy audit (NOTE: Use -E for | operator)
+grep -Eri "(telemetry|analytics|tracking)" src/ | wc -l  # Result: 0
 
 # 4. Command execution
 grep -r "g_spawn" src/
 # Examined: src/fsearch_file_utils.c:510 - Uses g_shell_quote() ✓
 
-# 5. File system access
-grep -r "g_get_user_config_dir\|g_get_user_data_dir" src/
+# 5. File system access (NOTE: Use -E for | operator)
+grep -Er "(g_get_user_config_dir|g_get_user_data_dir)" src/
 # Result: Proper XDG usage, 0700 permissions ✓
 
 # 6. Third-party code
